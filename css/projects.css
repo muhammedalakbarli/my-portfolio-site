@@ -1,0 +1,129 @@
+/* ═══════════════════════════════════════
+   PROJECTS — projects.css
+═══════════════════════════════════════ */
+
+.projects-note {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 36px;
+  line-height: 1.7;
+}
+
+.projects-note code {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 1px 7px;
+  border-radius: 4px;
+  font-size: 12px;
+  color: var(--accent-light);
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 18px;
+}
+
+.proj-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.proj-image {
+  width: calc(100% + 44px);
+  margin: -22px -22px 10px -22px;
+  height: 180px;
+  object-fit: cover;
+  display: block;
+  opacity: 0.85;
+  transition: opacity 0.3s var(--ease);
+}
+
+.proj-card:hover .proj-image {
+  opacity: 1;
+}
+
+.featured-badge {
+  display: inline-block;
+  font-size: 8px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border: 1px solid rgba(185,151,90,0.35);
+  color: var(--accent);
+  border-radius: 20px;
+  width: fit-content;
+}
+
+.proj-name {
+  font-family: 'Instrument Serif', serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.proj-desc {
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.75;
+  flex: 1;
+}
+
+.proj-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.proj-tag {
+  font-size: 9px;
+  letter-spacing: 1px;
+  padding: 3px 9px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  color: var(--muted);
+}
+
+.proj-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.proj-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+  padding: 7px 14px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  transition: all 0.3s var(--ease);
+}
+
+.proj-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  transform: translateY(-1px);
+}
+
+.proj-live {
+  border-color: rgba(110,159,181,0.25);
+  color: var(--blue);
+}
+.proj-live:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.empty-msg {
+  font-size: 14px;
+  color: var(--muted);
+}

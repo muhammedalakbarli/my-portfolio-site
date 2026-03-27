@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog — Mahammad Alakbarli</title>
+  <link rel="stylesheet" href="../css/global.css">
+  <link rel="stylesheet" href="../css/blogs.css">
+</head>
+<body>
+  <script src="../js/i18n.js"></script>
+  <script src="../js/sidebar.js"></script>
+
+  <main id="content">
+
+    <!-- LIST VIEW -->
+    <div id="blog-list">
+      <div class="page-header fade-in fade-in-1">
+        <p class="page-eyebrow" data-i18n="blogs_eyebrow">Thoughts & Writings</p>
+        <h1 class="page-title">Blog</h1>
+        <div class="title-line"></div>
+      </div>
+
+      <div id="blog-grid" class="blog-grid"></div>
+      <p id="blog-empty" class="empty-msg" style="display:none" data-i18n="blogs_empty">Hələlik heç bir post yoxdur.</p>
+    </div>
+
+    <!-- DETAIL VIEW -->
+    <div id="blog-detail" style="display:none">
+      <button class="back-btn" onclick="closeDetail()" data-i18n="blogs_back">← Geri</button>
+      <div id="detail-inner"></div>
+    </div>
+
+  </main>
+
+  <script src="../js/blogs.js"></script>
+  <script src="../js/fetch-blogs.js"></script>
+</body>
+</html>

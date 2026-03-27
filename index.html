@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahammad Alakbarli</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+  <script src="js/i18n.js"></script>
+  <script src="js/sidebar.js"></script>
+
+  <div id="content">
+
+    <main class="home-main">
+      <!-- HERO SECTION -->
+      <section class="home-hero">
+        <div class="home-wrap">
+        <article class="home-inner">
+          <div class="home-profile fade-in fade-in-2">
+            <div class="profile-cover"></div>
+            <img src="assets/profile.jpg" alt="Mahammad Alakbarli" class="profile-img">
+          </div>
+          <p class="eyebrow fade-in fade-in-2" data-i18n="home_eyebrow">Computer Engineering · Baku, Azerbaijan</p>
+          <h1 class="home-title fade-in fade-in-3" data-i18n-html="home_title">
+            Hello, I'm<br><em>Mahammad</em>
+          </h1>
+          <p class="home-sub fade-in fade-in-4" data-i18n-html="home_sub">
+            2nd year Computer Engineering student at Karabakh University.<br>
+            I build software, explore ideas, and care about craft.
+          </p>
+
+          <div class="home-memories card fade-in fade-in-4" onclick="location.href='pages/blogs.html'">
+            <div class="memories-content">
+              <span class="memories-icon">✦</span>
+              <div class="memories-text">
+                <span class="memories-label" data-i18n="home_memories_label">Memories & Achievements</span>
+                <span class="memories-sub" data-i18n="home_memories_sub">Nailiyyətlərim və Xatirələrim</span>
+              </div>
+            </div>
+            <span class="memories-arrow">→</span>
+          </div>
+
+          <div class="home-actions fade-in fade-in-5">
+            <a href="pages/projects.html" class="btn-primary" data-i18n="home_btn_projects">View Projects</a>
+            <a href="pages/contact.html"  class="btn-ghost"   data-i18n="home_btn_contact">Get in Touch</a>
+          </div>
+        </article>
+        <aside class="home-deco" aria-hidden="true">M</aside>
+      </div>
+      </section>
+
+      <!-- FEATURED MEMORIES SECTION -->
+      <section class="home-featured fade-in fade-in-5">
+        <div class="sec-label" data-i18n="home_featured_title">Featured Memories</div>
+        <div class="featured-grid">
+          <div class="card featured-card" onclick="location.href='pages/blogs.html'">
+            <div class="f-tag">Achievement</div>
+            <h3 class="f-title">Karabakh University Admission</h3>
+            <p class="f-desc">A new chapter in my engineering journey...</p>
+            <span class="f-link">Read More →</span>
+          </div>
+          <div class="card featured-card" onclick="location.href='pages/blogs.html'">
+            <div class="f-tag">Life</div>
+            <h3 class="f-title">Holberton Experience</h3>
+            <p class="f-desc">Peer learning and intense coding sessions.</p>
+            <span class="f-link">Read More →</span>
+          </div>
+          <div class="card featured-card" onclick="location.href='pages/blogs.html'">
+            <div class="f-tag">Project</div>
+            <h3 class="f-title">First Global Deployment</h3>
+            <p class="f-desc">When my code reached the first users.</p>
+            <span class="f-link">Read More →</span>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="home-footer fade-in fade-in-5">
+      <span class="footer-copy">© 2026 Mahammad Alakbarli</span>
+      <span class="footer-made" data-i18n="home_footer_made">Built with care.</span>
+    </footer>
+
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+      const homeLink = document.querySelector('[data-page="home"]');
+      if (homeLink) homeLink.classList.add('active');
+    });
+  </script>
+</body>
+</html>

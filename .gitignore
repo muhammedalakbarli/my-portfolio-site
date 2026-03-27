@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+my-portfolio/node_modules/
+
+# Sanity build output
+my-portfolio/dist/
+my-portfolio/.sanity/
+
+# Environment files (if added in future)
+.env
+.env.local
+.env*.local
+
+# OS files
+.DS_Store
+Thumbs.db
