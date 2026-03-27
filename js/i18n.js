@@ -18,7 +18,7 @@ const TRANSLATIONS = {
     home_btn_projects:'Layihələrə bax',
     home_btn_contact: 'Əlaqə saxla',
     home_status:      'Fürsətlər üçün açığam',
-    home_footer_made: 'Sevgiylə qurulub.',
+    home_footer_made: 'Sevgiylə.',
     home_featured_title: 'Önə Çıxan Xatirələr',
     home_memories_label: 'Xatirələr və Nailiyyətlər',
     home_memories_sub: 'Həyatımdan önəmli anlar',
