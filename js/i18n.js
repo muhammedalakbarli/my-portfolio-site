@@ -46,8 +46,8 @@ const TRANSLATIONS = {
     hs_desc:          'Sürətli, layihə əsaslı kompüter elmi proqramı. Aşağı səviyyəli C proqramlaşdırması, Python, sistem administrasiyası, veb inkişaf və birgə mühəndislik təcrübələrini əhatə etdi. Həmyaşıd öyrənmə onun özəyindədir.',
     eco_sub:          'Texnologiya & Davamlılıq',
     eco_desc:         'Texnologiya vasitəsilə ətraf mühitin qorunması təşəbbüslərinə töhfə verirəm. Yerli icmalar daxilində davamlı təcrübələri təşviq edən rəqəmsal alətlər üzərində çalışıram.',
-    ssg_sub:          'Könüllü',
-    ssg_desc:         'Qarabağ bölgəsindəki erkən mərhələ sahibkarlarını dəstəkləyirəm. Qurucularə texniki rehberlik, məhsul düşüncəsi ilə kömək edir və dünya səviyyəsindəki məhsulların hər yerdən çıxa biləcəyinə inamı formalaşdırıram.',
+    ssg_sub:          'Könüllü · Tamaşaçı Xidmətləri',
+    ssg_desc:         'III MDB Oyunlarında könüllü kimi xidmət etdim. Tamaşaçı xidmətləri komandası üzvü olaraq gələn qonaqları qarşıladım, onlara istiqamət göstərdim və tədbirə uyğun müsbət mühitin yaradılmasına töhfə verdim.',
     skill_problem:    'Problemin həlli',
 
     blogs_eyebrow:    'Fikirlər & Yazılar',
@@ -120,8 +120,8 @@ const TRANSLATIONS = {
     hs_desc:          'Intensive, project-based computer science program. Covered low-level C programming, Python, system administration, web development, and collaborative software engineering practices. Peer learning at its core.',
     eco_sub:          'Technology & Sustainability',
     eco_desc:         'Contributing to environmental awareness initiatives through technology. Working on digital tools and campaigns that promote sustainable practices within local communities.',
-    ssg_sub:          'Volunteer',
-    ssg_desc:         'Supporting early-stage entrepreneurs in the Karabakh region. Helping founders with technical guidance, product thinking, and building the belief that world-class products can come from anywhere.',
+    ssg_sub:          'Volunteer · Spectator Services',
+    ssg_desc:         'Served as a volunteer at the 3rd CIS Games. As a member of the spectator services team, I welcomed and guided guests, assisted with directions, and contributed to creating a welcoming atmosphere throughout the event.',
     skill_problem:    'Problem Solving',
 
     blogs_eyebrow:    'Thoughts & Writings',
@@ -194,8 +194,8 @@ const TRANSLATIONS = {
     hs_desc:          'Интенсивная программа на основе проектов. Охватывала низкоуровневое программирование на C, Python, системное администрирование, веб-разработку и практики совместной разработки. В основе — одноранговое обучение.',
     eco_sub:          'Технологии и устойчивость',
     eco_desc:         'Участвую в инициативах по экологической осведомлённости через технологии. Работаю над цифровыми инструментами и кампаниями, продвигающими устойчивые практики в местных сообществах.',
-    ssg_sub:          'Волонтёр',
-    ssg_desc:         'Поддерживаю начинающих предпринимателей Карабахского региона. Помогаю основателям с технической поддержкой, продуктовым мышлением и верой в то, что продукты мирового класса могут появляться откуда угодно.',
+    ssg_sub:          'Волонтёр · Обслуживание зрителей',
+    ssg_desc:         'Работал волонтёром на III Играх СНГ. В составе команды по обслуживанию зрителей встречал гостей, помогал с ориентацией и способствовал созданию гостеприимной атмосферы на мероприятии.',
     skill_problem:    'Решение задач',
 
     blogs_eyebrow:    'Мысли и записи',
@@ -268,8 +268,8 @@ const TRANSLATIONS = {
     hs_desc:          'Intensives, projektbasiertes Informatikprogramm. Behandelt wurden C-Programmierung auf niedriger Ebene, Python, Systemadministration, Webentwicklung und kollaborative Softwareentwicklungspraktiken. Peer-Learning als Kernprinzip.',
     eco_sub:          'Technologie & Nachhaltigkeit',
     eco_desc:         'Beitrag zu Initiativen zur Umweltsensibilisierung durch Technologie. Arbeit an digitalen Tools und Kampagnen zur Förderung nachhaltiger Praktiken in lokalen Gemeinschaften.',
-    ssg_sub:          'Ehrenamtlicher',
-    ssg_desc:         'Unterstützung von Frühphasen-Unternehmern in der Region Karabach. Hilfe für Gründer bei technischer Beratung, Produktdenken und dem Glauben, dass Weltklasse-Produkte von überall kommen können.',
+    ssg_sub:          'Ehrenamtlicher · Zuschauerdienste',
+    ssg_desc:         'Ehrenamtlicher Helfer bei den III. GUS-Spielen. Als Mitglied des Zuschauerdienst-Teams empfing ich Gäste, half bei der Orientierung und trug zur Schaffung einer einladenden Atmosphäre bei der Veranstaltung bei.',
     skill_problem:    'Problemlösung',
 
     blogs_eyebrow:    'Gedanken & Texte',
