@@ -286,6 +286,38 @@
   animation: fadeUp 1.2s var(--ease) 0.4s both;
 }
 
+/* ── RESPONSIVE ── */
+@media (max-width: 768px) {
+  .home-hero {
+    margin: -64px -20px 0 -20px;
+    padding: 72px 20px 48px;
+  }
+
+  .home-title {
+    font-size: clamp(44px, 13vw, 72px);
+  }
+
+  .home-sub {
+    font-size: 14px;
+  }
+
+  .home-deco {
+    display: none;
+  }
+
+  .home-memories {
+    max-width: 100%;
+  }
+
+  .home-featured {
+    margin-top: 48px;
+  }
+
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* ── FEATURED SECTION ── */
 .home-featured {
   margin-top: 80px;

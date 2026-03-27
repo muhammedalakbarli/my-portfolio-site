@@ -350,3 +350,77 @@ body::before {
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-track { background: transparent; }
 ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
+
+/* ── HAMBURGER BUTTON ── */
+#menu-toggle {
+  display: none;
+  position: fixed;
+  top: 18px;
+  left: 18px;
+  z-index: 600;
+  background: rgba(8,10,13,0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  color: var(--text);
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+}
+
+/* ── SIDEBAR OVERLAY ── */
+#sidebar-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 490;
+}
+
+#sidebar-overlay.open {
+  display: block;
+}
+
+/* ═══════════════════════════════════════
+   RESPONSIVE — Mobile (≤768px)
+═══════════════════════════════════════ */
+@media (max-width: 768px) {
+  #menu-toggle {
+    display: block;
+  }
+
+  #sidebar {
+    transform: translateX(-260px);
+    transition: transform 0.3s var(--ease);
+    width: 260px;
+  }
+
+  #sidebar.open {
+    transform: translateX(0);
+  }
+
+  #content {
+    margin-left: 0;
+    padding: 64px 20px 40px;
+  }
+
+  #lang-picker {
+    top: 18px;
+    right: 16px;
+  }
+
+  .page-title {
+    font-size: 38px;
+  }
+}
+
+/* ── Tablet (769px – 1024px) ── */
+@media (min-width: 769px) and (max-width: 1024px) {
+  :root { --sidebar: 200px; }
+
+  #content {
+    padding: 48px 40px;
+  }
+}

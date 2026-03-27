@@ -3,6 +3,16 @@
    Include in every page
 ═══════════════════════════════════════ */
 
+function toggleSidebar() {
+  document.getElementById('sidebar').classList.toggle('open');
+  document.getElementById('sidebar-overlay').classList.toggle('open');
+}
+
+function closeSidebar() {
+  document.getElementById('sidebar').classList.remove('open');
+  document.getElementById('sidebar-overlay').classList.remove('open');
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const pathParts = window.location.pathname.split('/');
   const inPages = pathParts[pathParts.length - 2] === 'pages';
@@ -55,6 +65,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   document.body.insertAdjacentHTML('afterbegin', sidebar);
 
+  // Mobile hamburger + overlay
+  document.body.insertAdjacentHTML('afterbegin', `
+    <button id="menu-toggle" onclick="toggleSidebar()" aria-label="Menu">&#9776;</button>
+    <div id="sidebar-overlay" onclick="toggleSidebar()"></div>
+  `);
+
   // Mark active nav item
   const current = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.nav-links a').forEach(a => {
@@ -81,6 +97,13 @@ document.addEventListener('DOMContentLoaded', () => {
 </div>
 `;
   document.body.insertAdjacentHTML('beforeend', langPicker);
+
+  // Close sidebar when nav link clicked on mobile
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => {
+      if (window.innerWidth <= 768) closeSidebar();
+    });
+  });
 
   // Close menu when clicking outside
   document.addEventListener('click', e => {
