@@ -1,0 +1,34 @@
+name: Sync Medium posts
+
+on:
+  schedule:
+    - cron: '0 * * * *'      # hər saat
+  workflow_dispatch: {}       # əl ilə "Run workflow" düyməsi (ani yayım üçün)
+
+permissions:
+  contents: write
+
+concurrency:
+  group: medium-sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch Medium feed → data/medium.json
+        run: python3 scripts/medium_to_json.py
+
+      - name: Commit if changed
+        run: |
+          git config user.name 'muhammedalakbarli'
+          git config user.email 'alakbarlimuhammed@gmail.com'
+          git add data/medium.json
+          if git diff --cached --quiet; then
+            echo "Dəyişiklik yoxdur — commit edilmir."
+          else
+            git commit -m 'chore: sync Medium posts'
+            git push
+          fi
