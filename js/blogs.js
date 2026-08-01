@@ -50,6 +50,16 @@ function openPost(id) {
 
   document.getElementById('blog-list').style.display   = 'none';
   document.getElementById('blog-detail').style.display = 'block';
+  window.scrollTo(0, 0);
+
+  // Medium yazıları HTML-dir; lokal/Sanity yazıları düz mətndir
+  const bodyHtml = post.html
+    ? post.content
+    : post.content.split(/\n\n+/).map(p => `<p>${p.replace(/\n/g, '<br>')}</p>`).join('');
+
+  const mediumLink = post.link
+    ? `<a href="${post.link}" target="_blank" rel="noopener" class="detail-source">Read on Medium ↗</a>`
+    : '';
 
   document.getElementById('detail-inner').innerHTML = `
     <div class="blog-meta detail-meta">
@@ -57,9 +67,8 @@ function openPost(id) {
       <span class="blog-date">${post.date}</span>
     </div>
     <div class="detail-title">${post.title}</div>
-    <div class="detail-body">
-      ${post.content.split(/\n\n+/).map(p => `<p>${p.replace(/\n/g,'<br>')}</p>`).join('')}
-    </div>
+    ${mediumLink}
+    <div class="detail-body">${bodyHtml}</div>
   `;
 }
 
