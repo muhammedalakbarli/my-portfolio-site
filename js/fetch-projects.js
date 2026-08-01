@@ -40,4 +40,7 @@ async function fetchAndRenderProjects() {
   }
 }
 
-document.addEventListener('DOMContentLoaded', fetchAndRenderProjects);
+/* Layihələr artıq js/projects.js içindəki PROJECTS massivindən idarə olunur
+   (curated siyahı, həmişə görünür). Sanity override-ı söndürülüb.
+   Yenidən aktivləşdirmək üçün aşağıdakı sətri açın: */
+// document.addEventListener('DOMContentLoaded', fetchAndRenderProjects);

@@ -12,21 +12,69 @@
 
 const PROJECTS = [
   {
-    name:   "Portfolio Website",
-    desc:   "Şəxsi portfolio saytı. Multi-page struktur, glassmorphism dizayn, dinamik blog sistemi.",
-    tags:   ["HTML", "CSS", "JavaScript"],
-    github: "https://github.com/muhammedalakbarli",
+    name:   "SIHA — UAV AI Vision System",
+    desc:   "Real-time computer-vision system for drones: object detection, HUD overlay, target tracking, geofencing, and MAVLink ground-control integration.",
+    tags:   ["Python", "Computer Vision", "OpenCV", "MAVLink", "Docker"],
+    github: "https://github.com/muhammedalakbarli/SIHA",
     live:   null,
     star:   true
   },
-  // {
-  //   name:   "Layihə Adı",
-  //   desc:   "Qısa açıqlama.",
-  //   tags:   ["Python", "Flask"],
-  //   github: "https://github.com/muhammedalakbarli/repo-adi",
-  //   live:   "https://canli-link.com",
-  //   star:   false
-  // },
+  {
+    name:   "RocketShield — Air Defense Simulation",
+    desc:   "Physics-accurate multi-layer air-defense simulation featuring Proportional Navigation guidance, a 9-state Kalman filter, and threat-prioritization AI.",
+    tags:   ["JavaScript", "Simulation", "Kalman Filter", "Canvas"],
+    github: "https://github.com/muhammedalakbarli/RocketShield",
+    live:   null,
+    star:   true
+  },
+  {
+    name:   "Bilik Yolu — Learning Platform",
+    desc:   "Interactive learning platform for Azerbaijani secondary-school students. Gamified lessons, progress tracking, spaced repetition, and an admin content system.",
+    tags:   ["Next.js", "TypeScript", "Supabase", "PostgreSQL"],
+    github: "https://github.com/muhammedalakbarli/Self_Study_Education",
+    live:   "https://self-study-education.vercel.app",
+    star:   true
+  },
+  {
+    name:   "OnkoDestek — Charity Platform",
+    desc:   "Transparent charity platform connecting donors with oncology patients in Azerbaijan, with verified campaigns and donation tracking.",
+    tags:   ["Next.js", "TypeScript", "Vercel"],
+    github: "https://github.com/muhammedalakbarli/onkodestek",
+    live:   "https://onkodestek.vercel.app",
+    star:   false
+  },
+  {
+    name:   "FluxSalesBot — AI Sales Assistant",
+    desc:   "AI sales assistant for SMEs in Azerbaijan. Automates customer support, order handling, and real-time inventory via Google Sheets — 24/7 in Azerbaijani.",
+    tags:   ["Python", "Claude AI", "Automation", "Google Sheets"],
+    github: "https://github.com/muhammedalakbarli/FluxSalesBot",
+    live:   null,
+    star:   false
+  },
+  {
+    name:   "Blog Scraper API",
+    desc:   "Dockerized web-scraping API built with FastAPI and PostgreSQL, following a clean, modular service-layer architecture.",
+    tags:   ["Python", "FastAPI", "PostgreSQL", "Docker"],
+    github: "https://github.com/muhammedalakbarli/blog-scraper",
+    live:   null,
+    star:   false
+  },
+  {
+    name:   "Touchless Control Suite",
+    desc:   "Control the mouse with hand gestures and face tracking in real time using MediaPipe and OpenCV.",
+    tags:   ["Python", "MediaPipe", "OpenCV", "Computer Vision"],
+    github: "https://github.com/muhammedalakbarli/touchless-control-suite",
+    live:   null,
+    star:   false
+  },
+  {
+    name:   "InvestX Dashboard",
+    desc:   "Responsive investment-analytics dashboard with a modular SCSS architecture and interactive data widgets.",
+    tags:   ["JavaScript", "SCSS", "Dashboard UI"],
+    github: "https://github.com/muhammedalakbarli/investx-dashboard",
+    live:   "https://investx-dashboard.vercel.app",
+    star:   false
+  },
 ];
 
 /* ─── aşağını dəyişmə ─── */
