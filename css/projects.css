@@ -15,7 +15,7 @@
   padding: 1px 7px;
   border-radius: 4px;
   font-size: 12px;
-  color: var(--accent-light);
+  color: var(--accent);
 }
 
 .projects-grid {
@@ -48,20 +48,21 @@
 
 .featured-badge {
   display: inline-block;
-  font-size: 8px;
-  letter-spacing: 2px;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 1px;
   text-transform: uppercase;
   padding: 3px 10px;
-  border: 1px solid rgba(185,151,90,0.35);
-  color: var(--accent);
+  background: var(--accent-soft);
+  color: var(--accent-dark);
   border-radius: 20px;
   width: fit-content;
 }
 
 .proj-name {
-  font-family: 'Instrument Serif', serif;
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 19px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
 }
 
 .proj-desc {
@@ -81,7 +82,7 @@
   font-size: 9px;
   letter-spacing: 1px;
   padding: 3px 9px;
-  background: rgba(255,255,255,0.04);
+  background: var(--surface-2);
   border: 1px solid var(--border);
   border-radius: 4px;
   color: var(--muted);
@@ -115,12 +116,13 @@
 }
 
 .proj-live {
-  border-color: rgba(110,159,181,0.25);
-  color: var(--blue);
+  border-color: var(--accent-2);
+  color: var(--accent-2);
 }
 .proj-live:hover {
-  border-color: var(--blue);
-  color: var(--blue);
+  border-color: var(--accent-2);
+  color: var(--accent-2);
+  background: var(--accent-2-soft);
 }
 
 .empty-msg {

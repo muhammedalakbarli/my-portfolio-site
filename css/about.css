@@ -14,7 +14,7 @@
 .bio-text {
   font-size: 16px;
   line-height: 1.9;
-  color: rgba(233,228,219,0.75);
+  color: var(--text-2);
   max-width: 700px;
 }
 
@@ -50,12 +50,12 @@
   width: 8px; height: 8px;
   background: var(--accent);
   border-radius: 50%;
-  box-shadow: 0 0 10px rgba(185,151,90,0.5);
+  box-shadow: 0 0 0 3px var(--accent-soft);
 }
 
 .t-dot.accent-blue {
-  background: var(--blue);
-  box-shadow: 0 0 10px rgba(110,159,181,0.5);
+  background: var(--accent-2);
+  box-shadow: 0 0 0 3px var(--accent-2-soft);
 }
 
 .t-header {
@@ -114,7 +114,6 @@
   font-size: 20px;
   color: var(--accent);
   margin-bottom: 10px;
-  font-family: 'Instrument Serif', serif;
 }
 
 .skill-name {

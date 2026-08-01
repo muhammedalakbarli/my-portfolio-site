@@ -12,7 +12,7 @@
   border: 1px solid var(--border);
   border-radius: 8px;
   color: var(--muted);
-  font-family: 'Syne', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 11px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -30,7 +30,7 @@
 #admin-panel {
   display: none;
   background: var(--surface);
-  border: 1px solid rgba(185,151,90,0.2);
+  border: 1px solid var(--border);
   border-radius: 14px;
   padding: 28px 30px;
   margin-bottom: 32px;
@@ -70,12 +70,12 @@
 .form-group input,
 .form-group textarea,
 .form-group select {
-  background: rgba(255,255,255,0.03);
+  background: var(--surface-2);
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 10px 13px;
   color: var(--text);
-  font-family: 'Syne', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 13px;
   outline: none;
   transition: border-color 0.3s var(--ease);
@@ -89,15 +89,15 @@
 }
 
 .form-group textarea { min-height: 120px; }
-.form-group select option { background: #0d1017; }
+.form-group select option { background: #ffffff; }
 
 .btn-pub {
   padding: 10px 24px;
   background: var(--accent);
-  color: var(--bg);
+  color: #ffffff;
   border: none;
   border-radius: 7px;
-  font-family: 'Syne', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 11px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -113,7 +113,7 @@
   color: var(--muted);
   border: 1px solid var(--border);
   border-radius: 7px;
-  font-family: 'Syne', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 11px;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -144,8 +144,8 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   padding: 3px 10px;
-  border: 1px solid rgba(110,159,181,0.35);
-  color: var(--blue);
+  border: 1px solid var(--accent-2);
+  color: var(--accent-2);
   border-radius: 20px;
 }
 
@@ -156,14 +156,14 @@
 }
 
 .blog-title {
-  font-family: 'Instrument Serif', serif;
-  font-size: 22px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: -0.3px;
   margin-bottom: 8px;
   transition: color 0.3s var(--ease);
 }
 
-.blog-card:hover .blog-title { color: var(--accent-light); }
+.blog-card:hover .blog-title { color: var(--accent); }
 
 .blog-excerpt {
   font-size: 13px;
@@ -197,16 +197,16 @@
   background: none;
   border: none;
   cursor: pointer;
-  font-family: 'Syne', sans-serif;
+  font-family: 'Inter', sans-serif;
   margin-bottom: 36px;
   transition: color 0.3s var(--ease);
 }
 .back-btn:hover { color: var(--accent); }
 
 .detail-title {
-  font-family: 'Instrument Serif', serif;
-  font-size: 46px;
-  font-weight: 400;
+  font-size: 42px;
+  font-weight: 700;
+  letter-spacing: -1px;
   line-height: 1.1;
   margin-bottom: 20px;
 }
@@ -220,7 +220,7 @@
 .detail-body {
   font-size: 15px;
   line-height: 1.95;
-  color: rgba(233,228,219,0.78);
+  color: var(--text-2);
   max-width: 680px;
 }
 
@@ -235,7 +235,7 @@
   border: 1px solid rgba(200,80,80,0.3);
   color: rgba(200,80,80,0.6);
   border-radius: 7px;
-  font-family: 'Syne', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 10px;
   letter-spacing: 2px;
   text-transform: uppercase;
