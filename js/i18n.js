@@ -38,7 +38,7 @@ const TRANSLATIONS = {
 
     about_eyebrow:    'Mən kimim',
     about_title:      'Haqqımda',
-    about_bio:        'Mən Mahammad Alakbarlı, Qarabağ Universitetinin 2-ci kurs Kompüter Mühəndisliyi tələbəsiyəm. Mühüm proqram yazılımı yaratmağa həvəsim var. Holberton School-da Kompüter Elmini öyrəndim — layihə əsaslı tədris mənim problem həll etmə bacarığımı inkişaf etdirdi. Təmiz koda, düşünülmüş dizayna və fasiləsiz inkişafa inanıram.',
+    about_bio:        'Mən Mahammad Alakbarlı — Qarabağ Universitetinin Kompüter Mühəndisliyi ixtisası üzrə ikinci kurs tələbəsiyəm. Proqramlaşdırmaya akademik öhdəlik kimi deyil, real problemləri həll etməyin vasitəsi kimi baxıram; elə buna görə də vaxtımın çoxunu dərslikdən kənarda — pilotsuz uçuş aparatları üçün görmə sistemlərindən məktəblilər üçün təhsil platformalarına qədər canlı layihələr qurmağa sərf edirəm. Mühəndislik təfəkkürümün bünövrəsini Holberton School-da qoydum: tədrisin bütünlüklə layihə üzərində qurulması məni nəzəriyyəni işləyən məhsula çevirməyə və qarşıya çıxan çətinliyi kimsədən gözləmədən özüm aradan qaldırmağa alışdırdı. Yazdığım kodun oxunaqlı, quruluşun aydın olmasına önəm verir, öyrənməyi isə peşənin ayrılmaz hissəsi sayıram.',
     about_education:  'Təhsil',
     about_volunteering:'Könüllülük',
     about_skills:     'Bacarıqlar',
@@ -114,7 +114,7 @@ const TRANSLATIONS = {
 
     about_eyebrow:    'Who I Am',
     about_title:      'About <em>Me</em>',
-    about_bio:        "I'm Mahammad Alakbarli, a 2nd year Computer Engineering student at Karabakh University with a passion for building software that matters. I studied Computer Science at Holberton School, where project-based learning sharpened my problem-solving instincts. I believe in clean code, thoughtful design, and continuous growth.",
+    about_bio:        "I'm Mahammad Alakbarli, a second-year Computer Engineering student at Karabakh University. I treat programming less as coursework and more as a way to solve real problems, which is why most of my time goes into projects outside the syllabus — from computer-vision systems for unmanned aircraft to learning platforms for schoolchildren. I built the foundation of my engineering thinking at Holberton School, where a fully project-based approach taught me to turn theory into working software and to work through hard problems on my own rather than wait for answers. I care about code that reads clearly and structure that makes sense, and I treat continuous learning as part of the job, not something separate from it.",
     about_education:  'Education',
     about_volunteering:'Volunteering',
     about_skills:     'Skills',
@@ -190,7 +190,7 @@ const TRANSLATIONS = {
 
     about_eyebrow:    'Кто я',
     about_title:      'Обо <em>мне</em>',
-    about_bio:        'Я Мухаммад Алакбарли, студент 2-го курса факультета компьютерной инженерии Карабахского университета. Увлечён созданием значимого программного обеспечения. Изучал компьютерные науки в Holberton School, где проектное обучение отточило мои навыки решения задач. Верю в чистый код, вдумчивый дизайн и непрерывный рост.',
+    about_bio:        'Меня зовут Мухаммад Алакбарли, я студент второго курса компьютерной инженерии Карабахского университета. Отношусь к программированию не как к учебной обязанности, а как к способу решать реальные задачи, поэтому большую часть времени посвящаю проектам вне программы — от систем компьютерного зрения для беспилотников до образовательных платформ для школьников. Основу инженерного мышления я заложил в Holberton School, где полностью проектный подход научил меня превращать теорию в работающий продукт и самостоятельно доводить сложные задачи до решения. Ценю читаемый код и продуманную структуру, а непрерывное обучение считаю частью профессии, а не чем-то отдельным.',
     about_education:  'Образование',
     about_volunteering:'Волонтёрство',
     about_skills:     'Навыки',
@@ -266,7 +266,7 @@ const TRANSLATIONS = {
 
     about_eyebrow:    'Wer ich bin',
     about_title:      'Über <em>mich</em>',
-    about_bio:        'Ich bin Mahammad Alakbarli, Student im 2. Jahr des Studiengangs Informatik-Ingenieurwesen an der Karabach-Universität, mit einer Leidenschaft für bedeutungsvolle Software. Ich studierte Informatik an der Holberton School, wo projektbasiertes Lernen mein Problemlösungsdenken schärfte. Ich glaube an sauberen Code, durchdachtes Design und kontinuierliches Wachstum.',
+    about_bio:        'Ich bin Mahammad Alakbarli, Student im zweiten Jahr der Informatik-Ingenieurwissenschaft an der Karabach-Universität. Programmieren sehe ich weniger als Studienpflicht denn als Weg, echte Probleme zu lösen — deshalb fließt der größte Teil meiner Zeit in Projekte außerhalb des Lehrplans, von Computer-Vision-Systemen für Drohnen bis zu Lernplattformen für Schüler. Das Fundament meines ingenieurmäßigen Denkens habe ich an der Holberton School gelegt, wo ein durchgehend projektbasierter Ansatz mich gelehrt hat, Theorie in funktionierende Software zu verwandeln und schwierige Aufgaben eigenständig zu lösen, statt auf Antworten zu warten. Mir sind lesbarer Code und eine klare Struktur wichtig, und kontinuierliches Lernen betrachte ich als Teil des Berufs, nicht als etwas Getrenntes.',
     about_education:  'Bildung',
     about_volunteering:'Ehrenamt',
     about_skills:     'Fähigkeiten',
