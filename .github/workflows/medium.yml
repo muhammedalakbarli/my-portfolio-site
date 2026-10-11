@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  actions: write   # keepalive addımı üçün
 
 concurrency:
   group: medium-sync
@@ -32,3 +33,11 @@ jobs:
             git commit -m 'chore: sync Medium posts'
             git push
           fi
+
+      # GitHub 60 gün commit olmayan repoda cron workflow-ları söndürür
+      # (yeni Medium yazısı olmayanda commit də olmur). Workflow-u API ilə
+      # yenidən "enable" etmək həmin sayğacı sıfırlayır.
+      - name: Keep workflow alive
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X PUT "repos/${{ github.repository }}/actions/workflows/medium.yml/enable"
