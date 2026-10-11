@@ -8,6 +8,7 @@
      github  — GitHub linki (və ya null)
      live    — canlı demo linki (və ya null)
      star    — true olarsa "Featured" badge göstərilir
+     award   — (istəyə bağlı) mükafat nişanı üçün i18n açarı
 ═══════════════════════════════════════ */
 
 const PROJECTS = [
@@ -17,7 +18,8 @@ const PROJECTS = [
     tags:   ["Machine Learning", "MediaPipe", "JavaScript", "Three.js", "Vite"],
     github: "https://github.com/Chevir-App-Development-Team/chevir-app-vers-1.0",
     live:   "https://chevirapp.com",
-    star:   true
+    star:   true,
+    award:  "proj_award_tf"
   },
   {
     name:   "Imparo — Adaptive Learning Platform",
@@ -114,7 +116,10 @@ function renderProjects() {
   grid.innerHTML = PROJECTS.map((p, i) => `
     <div class="card proj-card fade-in" style="animation-delay:${i * 0.08}s">
       ${p.image ? `<img class="proj-image" src="${p.image}" alt="${p.name}" loading="lazy">` : ''}
-      ${p.star ? '<span class="featured-badge">Featured</span>' : ''}
+      ${p.star || p.award ? `<div class="proj-badges">
+        ${p.star ? '<span class="featured-badge">Featured</span>' : ''}
+        ${p.award ? `<span class="award-badge" data-i18n="${p.award}">${t(p.award)}</span>` : ''}
+      </div>` : ''}
       <div class="proj-name">${p.name}</div>
       <p class="proj-desc">${p.desc}</p>
       <div class="proj-tags">

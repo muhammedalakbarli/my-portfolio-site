@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mahammad Alakbarli</title>
-  <meta name="description" content="Mahammad Alakbarli — Computer Engineering student at Karabakh University and Machine Learning Engineer at Chevir. Projects, experience and certificates.">
+  <meta name="description" content="Mahammad Alakbarli — Computer Engineering student at Karabakh University and Machine Learning Engineer at Chevir (3rd place, TEKNOFEST 2026). Projects, experience and certificates.">
   <link rel="stylesheet" href="css/global.css?v=3">
-  <link rel="stylesheet" href="css/home.css?v=4">
+  <link rel="stylesheet" href="css/home.css?v=5">
 </head>
 <body>
-  <script src="js/i18n.js?v=6"></script>
+  <script src="js/i18n.js?v=7"></script>
   <script src="js/sidebar.js?v=4"></script>
 
   <div id="content">
@@ -19,9 +19,16 @@
       <!-- ═══════════ HERO ═══════════ -->
       <section class="hero">
         <div class="hero-left">
-          <div class="status-badge fade-in fade-in-1">
-            <span class="status-dot"></span>
-            <span data-i18n="home_status">Available for opportunities</span>
+          <div class="hero-badges fade-in fade-in-1">
+            <div class="status-badge">
+              <span class="status-dot"></span>
+              <span data-i18n="home_status">Available for opportunities</span>
+            </div>
+            <a href="#latest" class="news-pill">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 01-10 0V4zM17 6h3v1a3 3 0 01-3 3M7 6H4v1a3 3 0 003 3"/></svg>
+              <span data-i18n="home_news">New: 3rd place at TEKNOFEST 2026</span>
+              <span class="news-arrow" aria-hidden="true">→</span>
+            </a>
           </div>
 
           <p class="eyebrow fade-in fade-in-2" data-i18n="home_eyebrow">ML Engineer at Chevir · Computer Engineering</p>
@@ -62,6 +69,38 @@
           </div>
           <span class="deco-M" aria-hidden="true">M</span>
         </div>
+      </section>
+
+      <!-- ═══════════ LATEST — TEKNOFEST 2026 ═══════════ -->
+      <section id="latest" class="home-latest fade-in fade-in-5">
+        <div class="sec-label" data-i18n="home_latest">Latest</div>
+
+        <article class="spotlight" id="spotlight">
+          <div class="spot-copy">
+            <p class="spot-eyebrow" data-i18n="tf_eyebrow">TEKNOFEST 2026 · NSosyal Innovation Competition</p>
+            <h2 class="spot-title" data-i18n-html="tf_title"><em>3rd place</em> with team Chevir</h2>
+            <p class="spot-desc" data-i18n="tf_desc">Chevir, our Azerbaijani Sign Language translator, made the final as the only team from Azerbaijan and finished in the top three.</p>
+            <ul class="spot-facts">
+              <li><span class="fact-ico" aria-hidden="true">₺</span><span data-i18n="tf_fact_prize">100,000 TL prize</span></li>
+              <li><span class="fact-ico" aria-hidden="true">★</span><span data-i18n="tf_fact_only">Only team from Azerbaijan in the final</span></li>
+              <li><span class="fact-ico" aria-hidden="true">◉</span><span data-i18n="tf_fact_place">Şanlıurfa, Türkiye · 30 Sep – 4 Oct 2026</span></li>
+            </ul>
+            <div class="spot-actions">
+              <a class="spot-btn" href="https://www.linkedin.com/feed/update/urn:li:activity:7515014168639582208/" target="_blank" rel="noopener" data-i18n="tf_post">Read the LinkedIn post →</a>
+              <a class="spot-link" href="https://chevirapp.com" target="_blank" rel="noopener" data-i18n="tf_chevir">See Chevir →</a>
+            </div>
+          </div>
+
+          <div class="spot-viz">
+            <div class="tf-field" id="tf-field" role="img" aria-label="332 → 22 → #3"></div>
+            <div class="tf-steps">
+              <div class="tf-step" data-step="1"><b class="tf-num" data-count="332">332</b><span data-i18n="tf_s1">applied</span></div>
+              <div class="tf-step" data-step="2"><b class="tf-num">22</b><span data-i18n="tf_s2">finalists</span></div>
+              <div class="tf-step" data-step="3"><b class="tf-num">#3</b><span data-i18n="tf_s3">place</span></div>
+            </div>
+            <p class="tf-legend" data-i18n="tf_legend">Each dot is one team that applied</p>
+          </div>
+        </article>
       </section>
 
       <!-- ═══════════ HIGHLIGHTS (bento) ═══════════ -->
@@ -115,6 +154,7 @@
 
   </div>
 
+  <script src="js/teknofest.js?v=1"></script>
   <script>
     document.addEventListener('DOMContentLoaded', () => {
       document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));

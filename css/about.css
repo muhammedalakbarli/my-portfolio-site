@@ -144,6 +144,22 @@
   color: var(--muted);
 }
 
+.award-new {
+  border-color: rgba(217,119,6,0.35);
+  background: linear-gradient(180deg, var(--accent-2-soft), var(--surface) 55%);
+}
+
+.award-link {
+  margin-top: auto;
+  padding-top: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.award-link:hover { text-decoration: underline; text-underline-offset: 3px; }
+
 /* ── LANGUAGES ── */
 .lang-card {
   display: flex;
