@@ -12,10 +12,34 @@
 
 const PROJECTS = [
   {
+    name:   "Chevir — Sign Language Translator",
+    desc:   "Real-time translation between Azerbaijani Sign Language and text. Sign recognition from hand, body and face landmarks (trained on the AzSLD dataset) and text-to-sign through a 3D avatar — all in the browser.",
+    tags:   ["Machine Learning", "MediaPipe", "JavaScript", "Three.js", "Vite"],
+    github: "https://github.com/Chevir-App-Development-Team/chevir-app-vers-1.0",
+    live:   "https://chevirapp.com",
+    star:   true
+  },
+  {
+    name:   "Imparo — Adaptive Learning Platform",
+    desc:   "Adaptive learning platform for Azerbaijani schoolchildren (grades 1–8): a 154-skill knowledge graph, per-skill mastery model, personalised practice and spaced repetition.",
+    tags:   ["Next.js", "TypeScript", "Supabase", "PostgreSQL", "Cloudflare Workers"],
+    github: "https://github.com/muhammedalakbarli/imparo",
+    live:   "https://imparo.app",
+    star:   true
+  },
+  {
     name:   "SIHA — UAV AI Vision System",
     desc:   "Real-time computer-vision system for drones: object detection, HUD overlay, target tracking, geofencing, and MAVLink ground-control integration.",
     tags:   ["Python", "Computer Vision", "OpenCV", "MAVLink", "Docker"],
     github: "https://github.com/muhammedalakbarli/SIHA",
+    live:   null,
+    star:   true
+  },
+  {
+    name:   "cvault — Vulnerability Triage CLI",
+    desc:   "Scans a project's dependencies and ranks CVEs by real-world exploitation (CISA KEV + FIRST EPSS), with exact upgrade recommendations. Powered by NVD and OSV.dev.",
+    tags:   ["Python", "Security", "CLI", "NVD / OSV"],
+    github: "https://github.com/muhammedalakbarli/cvault",
     live:   null,
     star:   true
   },
@@ -25,15 +49,7 @@ const PROJECTS = [
     tags:   ["JavaScript", "Simulation", "Kalman Filter", "Canvas"],
     github: "https://github.com/muhammedalakbarli/RocketShield",
     live:   null,
-    star:   true
-  },
-  {
-    name:   "Bilik Yolu — Learning Platform",
-    desc:   "Interactive learning platform for Azerbaijani secondary-school students. Gamified lessons, progress tracking, spaced repetition, and an admin content system.",
-    tags:   ["Next.js", "TypeScript", "Supabase", "PostgreSQL"],
-    github: "https://github.com/muhammedalakbarli/Self_Study_Education",
-    live:   "https://self-study-education.vercel.app",
-    star:   true
+    star:   false
   },
   {
     name:   "OnkoDestek — Charity Platform",
@@ -46,8 +62,16 @@ const PROJECTS = [
   {
     name:   "FluxSalesBot — AI Sales Assistant",
     desc:   "AI sales assistant for SMEs in Azerbaijan. Automates customer support, order handling, and real-time inventory via Google Sheets — 24/7 in Azerbaijani.",
-    tags:   ["Python", "Claude AI", "Automation", "Google Sheets"],
+    tags:   ["Python", "Claude API", "Telegram Bot API", "Google Sheets"],
     github: "https://github.com/muhammedalakbarli/FluxSalesBot",
+    live:   null,
+    star:   false
+  },
+  {
+    name:   "Browser Presenter",
+    desc:   "Browser extension for presenting: draw annotations over any page and drive a virtual mouse from the keyboard. Works in Chrome, Edge, Brave, Opera and Firefox.",
+    tags:   ["JavaScript", "Browser Extension"],
+    github: "https://github.com/muhammedalakbarli/browser-presenter",
     live:   null,
     star:   false
   },

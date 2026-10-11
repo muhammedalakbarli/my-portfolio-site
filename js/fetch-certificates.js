@@ -8,6 +8,21 @@ function sanityImageUrlCert(ref, width) {
   return width ? url + `?w=${width}&fit=max&auto=format` : url;
 }
 
+/* "Programming for Everybody (Getting Started with Python)" ilə
+   "Programming for Everybody " eyni sertifikat sayılır */
+function certKey(name) {
+  return name.toLowerCase().replace(/\(.*?\)/g, '').replace(/\s+/g, ' ').trim();
+}
+
+/* "14 Mar 2026", "Mar 2026", "2026" → müqayisə üçün rəqəm */
+function certDateValue(date) {
+  const months = ['jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec'];
+  const year  = (date.match(/\d{4}/) || [0])[0];
+  const month = months.indexOf((date.match(/[a-z]{3}/i) || [''])[0].toLowerCase()) + 1;
+  const day   = (date.match(/^\s*(\d{1,2})\s/) || [0, 0])[1];
+  return year * 10000 + month * 100 + Number(day);
+}
+
 async function fetchAndRenderCerts() {
   const query = encodeURIComponent(
     '*[_type == "certificate"] | order(order asc, _createdAt asc) {name, issuer, date, image, link}'
@@ -20,10 +35,11 @@ async function fetchAndRenderCerts() {
     const { result } = await res.json();
     if (!Array.isArray(result) || result.length === 0) return;
 
-    CERTIFICATES.splice(0, CERTIFICATES.length);
+    const known = new Set(CERTIFICATES.map(c => certKey(c.name)));
     result.forEach(c => {
+      if (!c.name || known.has(certKey(c.name))) return;
       CERTIFICATES.push({
-        name:   c.name   || '',
+        name:   c.name.trim(),
         issuer: c.issuer || '',
         date:   c.date   || '',
         image:  sanityImageUrlCert(c.image?.asset?._ref, 400),
@@ -31,6 +47,7 @@ async function fetchAndRenderCerts() {
         icon:   '◆',
       });
     });
+    CERTIFICATES.sort((x, y) => certDateValue(y.date) - certDateValue(x.date));
 
     renderCerts();
   } catch (err) {

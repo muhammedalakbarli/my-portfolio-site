@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About — Mahammad Alakbarli</title>
   <link rel="stylesheet" href="../css/global.css?v=3">
-  <link rel="stylesheet" href="../css/about.css?v=3">
+  <link rel="stylesheet" href="../css/about.css?v=4">
 </head>
 <body>
-  <script src="../js/i18n.js?v=5"></script>
-  <script src="../js/sidebar.js?v=3"></script>
+  <script src="../js/i18n.js?v=6"></script>
+  <script src="../js/sidebar.js?v=4"></script>
 
   <main id="content">
     <div class="page-header fade-in fade-in-1">
@@ -22,94 +22,200 @@
     <section class="bio-section fade-in fade-in-2">
       <div class="card bio-card">
         <p class="bio-text" data-i18n="about_bio">
-          I'm Mahammad Alakbarli, a second-year Computer Engineering student at Karabakh University.
-          I treat programming less as coursework and more as a way to solve real problems, which is why
-          most of my time goes into projects outside the syllabus — from computer-vision systems for
-          unmanned aircraft to learning platforms for schoolchildren. I built the foundation of my
-          engineering thinking at Holberton School, where a fully project-based approach taught me to
-          turn theory into working software and to work through hard problems on my own rather than
-          wait for answers. I care about code that reads clearly and structure that makes sense, and I
-          treat continuous learning as part of the job, not something separate from it.
+          I'm Mahammad Alakbarli, a third-year Computer Engineering student at Karabakh University and a Machine Learning Engineer at Chevir, where I work on translating Azerbaijani Sign Language into text and back. I treat programming as a way to solve real problems rather than as coursework, so most of my time goes into things people can actually use — an adaptive learning platform for schoolchildren, autonomy software that placed 3rd at the Turkic World UAV Competition, and security tooling such as a CVE triage CLI. Alongside that, I lead the security and cryptography track at Azeros. Holberton School's project-based programme, which I joined on a full scholarship, taught me to turn theory into working software and to work through hard problems on my own. I care about readable code, clear structure and careful handling of sensitive data, and I see continuous learning as part of the job.
         </p>
       </div>
     </section>
 
     <div class="about-grid">
-      <!-- EDUCATION -->
+      <!-- EXPERIENCE -->
       <section class="fade-in fade-in-2">
+        <div class="sec-label" data-i18n="about_experience">Experience</div>
+        <div class="timeline">
+          <div class="card t-card">
+            <div class="t-dot"></div>
+            <div class="t-header">
+              <div>
+                <div class="t-title">Chevir</div>
+                <div class="t-sub" data-i18n="chev_sub">Machine Learning Engineer · Full-time</div>
+              </div>
+              <span class="t-date">2026 — <span data-i18n="present">Present</span></span>
+            </div>
+            <p class="t-desc" data-i18n="chev_desc">Working on Chevir's Azerbaijani Sign Language translator: sign recognition from hand, body and face landmarks trained on the AzSLD dataset, and a text-to-sign 3D avatar that runs entirely in the browser.</p>
+          </div>
+          <div class="card t-card">
+            <div class="t-dot"></div>
+            <div class="t-header">
+              <div>
+                <div class="t-title" data-i18n="uav_title">Turkic World UAV Competition (GÖKTÜRK)</div>
+                <div class="t-sub" data-i18n="uav_sub">Software Developer · UAV Systems</div>
+              </div>
+              <span class="t-date">2026</span>
+            </div>
+            <p class="t-desc" data-i18n="uav_desc">Built the software architecture and decision-making layer of an autonomous UAV in Python. At the final at Gebze Technical University, our team placed 3rd among teams from 7 Turkic states.</p>
+          </div>
+          <div class="card t-card">
+            <div class="t-dot"></div>
+            <div class="t-header">
+              <div>
+                <div class="t-title">Azeros</div>
+                <div class="t-sub" data-i18n="azr_sub">Security &amp; Cryptography Team Lead · Apprenticeship</div>
+              </div>
+              <span class="t-date">2025 — <span data-i18n="present">Present</span></span>
+            </div>
+            <p class="t-desc" data-i18n="azr_desc">Leading the security and cryptography track of the Azeros ecosystem: designing secure system architecture, implementing cryptographic solutions, defining security standards and identifying risks to keep data protected across its platforms.</p>
+          </div>
+          <div class="card t-card">
+            <div class="t-dot"></div>
+            <div class="t-header">
+              <div>
+                <div class="t-title">ENACTUS · Karabakh University</div>
+                <div class="t-sub" data-i18n="enx_sub">IT Specialist &amp; IT Support Lead</div>
+              </div>
+              <span class="t-date">2025</span>
+            </div>
+            <p class="t-desc" data-i18n="enx_desc">Owned the technical delivery, data handling and access control of a social-impact product that won 1st place nationally and qualified for the ENACTUS World Cup 2025.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EDUCATION -->
+      <section class="fade-in fade-in-3">
         <div class="sec-label" data-i18n="about_education">Education</div>
         <div class="timeline">
-
           <div class="card t-card">
             <div class="t-dot"></div>
             <div class="t-header">
               <div>
                 <div class="t-title">Karabakh University</div>
-                <div class="t-sub" data-i18n="ku_sub">Computer Engineering · 2nd Year</div>
+                <div class="t-sub" data-i18n="ku_sub">B.Eng. Computer Engineering · 3rd year</div>
               </div>
-              <span class="t-date">2023 — Present</span>
+              <span class="t-date">2024 — 2028</span>
             </div>
-            <p class="t-desc" data-i18n="ku_desc">
-              Studying computer engineering fundamentals — algorithms, data structures,
-              operating systems, and software development. Building a strong theoretical
-              and practical foundation for a career in tech.
-            </p>
+            <p class="t-desc" data-i18n="ku_desc">Coursework in software engineering, algorithms, databases and cybersecurity, including relational modelling and SQL. I test the theory from lectures against my own projects — knowledge sticks far better once practice is involved.</p>
           </div>
-
           <div class="card t-card">
             <div class="t-dot"></div>
             <div class="t-header">
               <div>
                 <div class="t-title">Holberton School</div>
-                <div class="t-sub" data-i18n="hs_sub">Computer Science</div>
+                <div class="t-sub" data-i18n="hs_sub">Computer Science · 100% scholarship</div>
               </div>
-              <span class="t-date">2023 — 2024</span>
+              <span class="t-date">2026</span>
             </div>
-            <p class="t-desc" data-i18n="hs_desc">
-              Intensive, project-based computer science program. Covered low-level C programming,
-              Python, system administration, web development, and collaborative software engineering
-              practices. Peer learning at its core.
-            </p>
+            <p class="t-desc" data-i18n="hs_desc">An intensive, entirely project-based programme I joined on a full merit scholarship: Python, JavaScript, back-end and front-end web development, system engineering &amp; DevOps, and networking. There were no ready answers — every problem had to be researched and solved independently, and peer review taught me to treat other people's code with care.</p>
           </div>
-
+          <div class="card t-card">
+            <div class="t-dot"></div>
+            <div class="t-header">
+              <div>
+                <div class="t-title">Maqsud Ismayilov Secondary School</div>
+                <div class="t-sub" data-i18n="sch_sub">Full secondary education · Salyan</div>
+              </div>
+              <span class="t-date">2024</span>
+            </div>
+            <p class="t-desc" data-i18n="sch_desc">Graduated with an Attestation of Distinction — the highest academic honour.</p>
+          </div>
         </div>
       </section>
+    </div>
 
+    <!-- AWARDS -->
+    <section id="awards" class="awards-section fade-in fade-in-3">
+      <div class="sec-label" data-i18n="about_awards">Awards &amp; Achievements</div>
+      <div class="awards-grid">
+        <div class="card award-card">
+          <span class="award-rank">3</span>
+          <div class="award-title" data-i18n="feat1_title">3rd Place — Turkic World UAV Competition</div>
+          <div class="award-meta" data-i18n="aw_uav_meta">Gebze Technical University · May 2026</div>
+          <p class="award-desc" data-i18n="aw_uav_desc">Represented Karabakh University among teams from 7 Turkic states.</p>
+        </div>
+        <div class="card award-card">
+          <span class="award-rank">1</span>
+          <div class="award-title" data-i18n="feat2_title">1st Place — ENACTUS Azerbaijan</div>
+          <div class="award-meta" data-i18n="aw_enx_meta">National competition · Aug 2025</div>
+          <p class="award-desc" data-i18n="aw_enx_desc">Social entrepreneurship &amp; IT innovation; qualified for the ENACTUS World Cup in Thailand.</p>
+        </div>
+        <div class="card award-card">
+          <span class="award-rank">100%</span>
+          <div class="award-title" data-i18n="aw_hs_title">100% Scholarship — Holberton School</div>
+          <div class="award-meta" data-i18n="aw_hs_meta">Feb 2026</div>
+          <p class="award-desc" data-i18n="aw_hs_desc">Selected on technical merit for the Computer Science &amp; Software Engineering programme.</p>
+        </div>
+        <div class="card award-card">
+          <span class="award-rank">✦</span>
+          <div class="award-title" data-i18n="aw_hack_title">Rebuild Karabakh Hackathon — Certificate of Appreciation</div>
+          <div class="award-meta" data-i18n="aw_hack_meta">Azerbaijan Innovation Center · Oct 2025</div>
+          <p class="award-desc" data-i18n="aw_hack_desc">Recognised for our team's contribution at the hackathon.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="about-grid">
       <!-- VOLUNTEERING -->
       <section class="fade-in fade-in-3">
         <div class="sec-label" data-i18n="about_volunteering">Volunteering</div>
         <div class="timeline">
-
           <div class="card t-card">
             <div class="t-dot accent-blue"></div>
             <div class="t-header">
               <div>
-                <div class="t-title">ENACTUS KARABAKH</div>
-                <div class="t-sub" data-i18n="eco_sub">Technology & Sustainability</div>
+                <div class="t-title" data-i18n="book_title">Book Club · Karabakh University</div>
+                <div class="t-sub" data-i18n="book_sub">Student Affairs Coordinator</div>
               </div>
+              <span class="t-date">2025 — <span data-i18n="present">Present</span></span>
             </div>
-            <p class="t-desc" data-i18n="eco_desc">
-              Contributing to environmental awareness initiatives through technology.
-              Working on digital tools and campaigns that promote sustainable practices
-              within local communities.
-            </p>
+            <p class="t-desc" data-i18n="book_desc">Coordinating events and member engagement for a student club of 100+ members — planning, communication and following through with stakeholders.</p>
           </div>
-
           <div class="card t-card">
             <div class="t-dot accent-blue"></div>
             <div class="t-header">
               <div>
-                <div class="t-title">The Third CIS Games</div>
-                <div class="t-sub" data-i18n="ssg_sub">Volunteer</div>
+                <div class="t-title" data-i18n="wuf_title">WUF13 · World Urban Forum</div>
+                <div class="t-sub" data-i18n="wuf_sub">Volunteer · Media Hub Info Desk</div>
               </div>
+              <span class="t-date">2026</span>
             </div>
-            <p class="t-desc" data-i18n="ssg_desc">
-              Supporting early-stage entrepreneurs in the Karabakh region.
-              Helping founders with technical guidance, product thinking, and
-              building the belief that world-class products can come from anywhere.
-            </p>
+            <p class="t-desc" data-i18n="wuf_desc">Selected as a volunteer for the Media Hub Info Desk (Broadcast &amp; Media Operations) at the 13th World Urban Forum in Baku; received a certificate of appreciation.</p>
           </div>
+          <div class="card t-card">
+            <div class="t-dot accent-blue"></div>
+            <div class="t-header">
+              <div>
+                <div class="t-title" data-i18n="ssg_title">3rd CIS Games</div>
+                <div class="t-sub" data-i18n="ssg_sub">Volunteer · Spectator Services</div>
+              </div>
+              <span class="t-date">2025</span>
+            </div>
+            <p class="t-desc" data-i18n="ssg_desc">Welcomed and guided spectators at the archery competitions in Khankendi. Keeping a calm atmosphere amid a steady flow of guests taught me to stay composed under pressure and adapt quickly within a team.</p>
+          </div>
+        </div>
+      </section>
 
+      <!-- LANGUAGES -->
+      <section class="fade-in fade-in-4">
+        <div class="sec-label" data-i18n="about_languages">Languages</div>
+        <div class="card lang-card">
+          <div class="lang-row">
+            <div class="lang-head"><span class="lang-name" data-i18n="lang_az">Azerbaijani</span><span class="lang-level" data-i18n="lvl_native">Native</span></div>
+            <div class="lang-bar"><span style="width:100%"></span></div>
+          </div>
+          <div class="lang-row">
+            <div class="lang-head"><span class="lang-name" data-i18n="lang_tr">Turkish</span><span class="lang-level">C1</span></div>
+            <div class="lang-bar"><span style="width:85%"></span></div>
+          </div>
+          <div class="lang-row">
+            <div class="lang-head"><span class="lang-name" data-i18n="lang_en">English</span><span class="lang-level">B2</span></div>
+            <div class="lang-bar"><span style="width:68%"></span></div>
+          </div>
+          <div class="lang-row">
+            <div class="lang-head"><span class="lang-name" data-i18n="lang_de">German</span><span class="lang-level">A2</span></div>
+            <div class="lang-bar"><span style="width:36%"></span></div>
+          </div>
+          <div class="lang-row">
+            <div class="lang-head"><span class="lang-name" data-i18n="lang_ru">Russian</span><span class="lang-level">A1</span></div>
+            <div class="lang-bar"><span style="width:20%"></span></div>
+          </div>
         </div>
       </section>
     </div>
@@ -119,36 +225,24 @@
       <div class="sec-label" data-i18n="about_skills">Skills</div>
       <div class="skills-grid">
         <div class="card skill-card">
-          <div class="skill-icon">{ }</div>
-          <div class="skill-name">Python / C</div>
+          <div class="skill-head"><span class="skill-icon">{ }</span><span class="skill-name" data-i18n="sk_backend">Backend &amp; Data</span></div>
+          <div class="skill-chips"><span class="skill-chip">Python</span><span class="skill-chip">TypeScript</span><span class="skill-chip">Node.js</span><span class="skill-chip">PostgreSQL / SQL</span><span class="skill-chip">Supabase</span><span class="skill-chip">FastAPI</span><span class="skill-chip">REST APIs</span><span class="skill-chip">Schema design &amp; migrations</span></div>
         </div>
         <div class="card skill-card">
-          <div class="skill-icon">&lt;/&gt;</div>
-          <div class="skill-name">TypeScript / JavaScript</div>
+          <div class="skill-head"><span class="skill-icon">◎</span><span class="skill-name" data-i18n="sk_ml">Machine Learning &amp; Vision</span></div>
+          <div class="skill-chips"><span class="skill-chip">MediaPipe</span><span class="skill-chip">OpenCV</span><span class="skill-chip">Computer vision</span><span class="skill-chip">Landmark-based recognition</span><span class="skill-chip">In-browser inference</span></div>
         </div>
         <div class="card skill-card">
-          <div class="skill-icon">◈</div>
-          <div class="skill-name">React / Next.js</div>
+          <div class="skill-head"><span class="skill-icon">◆</span><span class="skill-name" data-i18n="sk_security">Security</span></div>
+          <div class="skill-chips"><span class="skill-chip">Auth (JWT / OAuth)</span><span class="skill-chip">Row-Level Security</span><span class="skill-chip">Encryption basics</span><span class="skill-chip">Network security</span><span class="skill-chip">Kali Linux</span><span class="skill-chip">CVE triage (KEV / EPSS)</span></div>
         </div>
         <div class="card skill-card">
-          <div class="skill-icon">⚡</div>
-          <div class="skill-name">FastAPI / Node.js</div>
+          <div class="skill-head"><span class="skill-icon">⬡</span><span class="skill-name" data-i18n="sk_cloud">Cloud &amp; Tooling</span></div>
+          <div class="skill-chips"><span class="skill-chip">Cloudflare Workers</span><span class="skill-chip">Docker</span><span class="skill-chip">Linux</span><span class="skill-chip">Git &amp; GitHub</span><span class="skill-chip">CI/CD (GitHub Actions)</span><span class="skill-chip">Vercel / Netlify</span></div>
         </div>
         <div class="card skill-card">
-          <div class="skill-icon">◇</div>
-          <div class="skill-name">PostgreSQL / Supabase</div>
-        </div>
-        <div class="card skill-card">
-          <div class="skill-icon">⬡</div>
-          <div class="skill-name">Docker / Linux</div>
-        </div>
-        <div class="card skill-card">
-          <div class="skill-icon">⎇</div>
-          <div class="skill-name">Git / GitHub</div>
-        </div>
-        <div class="card skill-card">
-          <div class="skill-icon">◎</div>
-          <div class="skill-name">Computer Vision (OpenCV)</div>
+          <div class="skill-head"><span class="skill-icon">&lt;/&gt;</span><span class="skill-name" data-i18n="sk_frontend">Frontend</span></div>
+          <div class="skill-chips"><span class="skill-chip">Next.js</span><span class="skill-chip">React</span><span class="skill-chip">Tailwind CSS</span><span class="skill-chip">Three.js</span></div>
         </div>
       </div>
     </section>
